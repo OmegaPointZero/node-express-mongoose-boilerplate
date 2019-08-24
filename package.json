@@ -1,0 +1,25 @@
+{
+  "name": "node-express-mongoose-boilerplate",
+  "version": "1.0.0",
+  "description": "A Boilerplate for creating Node.js apps with Express.js and MongoDB via Mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmegaPointZero/node-express-mongoose-boilerplate.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongoose",
+    "boilerplate"
+  ],
+  "author": "Joshua Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmegaPointZero/node-express-mongoose-boilerplate/issues"
+  },
+  "homepage": "https://github.com/OmegaPointZero/node-express-mongoose-boilerplate#readme"
+}
