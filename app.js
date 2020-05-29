@@ -21,8 +21,8 @@ var cors = (function(req,res,next){
 app.use(cors)
 
 /* MongoDB/Mongoose configuration */
-mongoose.connect(configURL, {useNewUrlParser:true}).then(res => console.log('Successfully connected to Mongo database')).catch(err=>console.log(err))
-mongoose.set('useCreateIndex', true);
+//mongoose.connect(configURL, {useNewUrlParser:true}).then(res => console.log('Successfully connected to Mongo database')).catch(err=>console.log(err))
+//mongoose.set('useCreateIndex', true);
 
 require('./config/passport')(passport);
 app.use(morgan('dev'));
