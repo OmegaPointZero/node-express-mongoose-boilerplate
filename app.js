@@ -43,7 +43,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 var routes = require('./app/routes/routes.js')(app,passport);
-app.use('/', routes);
+//app.use('/', routes);
 
 
 app.engine('html', require('ejs').renderFile);
