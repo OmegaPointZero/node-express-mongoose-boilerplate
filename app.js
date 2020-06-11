@@ -27,7 +27,8 @@ app.use(cors)
 require('./config/passport')(passport);
 app.use(morgan('dev'));
 app.use(express.static('public'));
-app.use(bodyParser.urlencoded({extended:true}));
+//app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 app.use(flash())
 
 app.use(function(req,res,next){
@@ -38,7 +39,7 @@ app.use(function(req,res,next){
     next();
 });
 
-app.use(session({secret:process.env.SESSION_SECRET,resave:true,saveUninitialized:true}));
+app.use(session({secret:process.env.SESSION_SECRET || "alskdnflaweinwlknwlg2n43t902nf",resave:true,saveUninitialized:true}));
 app.use(passport.initialize());
 app.use(passport.session());
 
